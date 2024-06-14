@@ -10,6 +10,13 @@
 // 03- Function
 //   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   console.log(filterEvenNumbers(numbers)); // Output: [2, 4, 6, 8, 10]
+/*
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function filterEvenNumbers(numbers) {
+  return numbers.filter((e) => !e % 2 === 0);
+}
+filterEvenNumbers(numbers);
+*/
 
 // 04 - function
 //   const numbers = [1, 2, 3, 4, 5];
@@ -18,6 +25,13 @@
 // 05 - function
 //   const numbers = [1, 2, 3, 4, 5];
 //   console.log(findMax(numbers)); // Output: 5
+/*
+const numbers = [1, 2, 3, 4, 5];
+function findMax(numbers) {
+  return numbers.reduce((acc, e) => (acc > e ? acc : e), 0);
+}
+findMax(numbers);
+*/
 
 // 06 - function
 //   const people = [
@@ -27,6 +41,18 @@
 //     { name: "El Chengue", age: 49 }
 //   ];
 //   console.log(calculateAverageAge(people)); // Output: 32.5
+/*
+const people = [
+  { name: "Juan", age: 25 },
+  { name: "Carla", age: 30 },
+  { name: "Lucia", age: 35 },
+  { name: "El Chengue", age: 49 },
+];
+function calculateAverageAge(p) {
+  return p.reduce((acc, e) => e.age + acc, 0) / p.length;
+}
+calculateAverageAge(people);
+*/
 
 // 07 - function  combinedHobbies(persons)
 // Function to combine hobbies from all persons
